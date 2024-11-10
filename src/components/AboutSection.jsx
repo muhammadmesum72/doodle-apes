@@ -23,11 +23,11 @@ export default function SectionAbout() {
 
       {/* Image Section */}
       <div className="lg:w-1/2 flex justify-center mt-5 md:mt-0">
-        <div className="w-full max-w-[250px]    sm:max-w-[300px] lg:max-w-[450px] mx-auto hover:-translate-y-5 transition-all ease-in-out">
+        <div className="w-full max-w-[250px]    sm:max-w-[300px] lg:max-w-[380px] mx-auto hover:-translate-y-5 transition-all ease-in-out">
           <img
             src={`/images/heroImg.png`}
             alt="NFT"
-            className="rounded-lg  w-full object-cover"
+            className="rounded-lg  w-full object-contain"
           />
         </div>
       </div>
