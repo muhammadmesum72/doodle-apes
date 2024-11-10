@@ -1,9 +1,11 @@
 const Footer = () => {
   return (
     <div className="flex items-center justify-between text-white px-6 lg:px-16 xl:px-32 py-[20px]">
-      <div className="text-[24px]">Doodles Apes 2024</div>
+      <div className="text-[24px]">© D00dle Apes 2024</div>
       <div className="flex items-center gap-4">
         <div>
+          <a href="https://x.com/@D00dlesApes" target="_blank">
+
           <svg
             width="31"
             height="33"
@@ -16,9 +18,13 @@ const Footer = () => {
               fill="white"
             />
           </svg>
+          </a>
+
         </div>
         <div>
+          <a href="https://magiceden.io/" target="_blank">
           <img src="/images/magicEden.png" className="w-[36px]" alt="" />
+          </a>
         </div>
       </div>
     </div>

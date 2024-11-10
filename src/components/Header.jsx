@@ -33,7 +33,10 @@ export default function Header() {
         scrolled ? "bg-[#2D1039]/70 backdrop-blur-md" : ""
       }`}
     >
-      <div className="text-[24px] md:text-[36px] font-bold z-40">Logo</div>
+      <div className="text-[24px]  font-bold z-40 bg-white flex items-center gap-2 p-2 rounded-xl">
+        <img src="/images/apeCoin.jpg" className="w-[36px] rounded-l-xl" alt="" />
+        <div className="text-black  bg-gradient-to-r from-[#1E58FC] via-[#D914E4] to-[#F10419] inline-block text-transparent bg-clip-text">D00dle Apes</div>
+      </div>
 
       <div className="hidden md:flex text-[16px] space-x-[40px] font-bold">
         <Link to="/#aboutus">About Us</Link>
