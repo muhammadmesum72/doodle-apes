@@ -6,7 +6,7 @@ const WLCheckerPage = () => {
     <div className="z-40 relative overflow-hidden">
       <svg
         width="1600"
-        className="absolute top-0"
+        className="absolute top-0 w-full h-full object-cover"
         height="1053"
         viewBox="0 0 1600 1053"
         fill="none"
@@ -59,6 +59,8 @@ const WLCheckerPage = () => {
       </svg>
       <div className="z-30">
         <WLChecker />
+      </div>
+      <div className="">
         <Footer />
       </div>
     </div>

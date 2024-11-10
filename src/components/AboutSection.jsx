@@ -22,8 +22,8 @@ export default function SectionAbout() {
       </div>
 
       {/* Image Section */}
-      <div className="lg:w-1/2 flex justify-center">
-        <div className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] mx-auto">
+      <div className="lg:w-1/2 flex justify-center mt-5 md:mt-0">
+        <div className="w-full max-w-[250px]    sm:max-w-[300px] lg:max-w-[450px] mx-auto hover:-translate-y-5 transition-all ease-in-out">
           <img
             src={`/images/heroImg.png`}
             alt="NFT"

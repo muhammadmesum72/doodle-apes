@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
     <div className="flex items-center justify-between text-white px-6 lg:px-16 xl:px-32 py-[20px]">
-      <div className="text-[24px]">© D00dle Apes 2024</div>
-      <div className="flex items-center gap-4">
+      <div className="text-[24px] z-50">© D00dle Apes 2024</div>
+      <div className="flex items-center gap-4 z-50">
         <div>
-          <a href="https://x.com/@D00dlesApes" target="_blank">
+          <a href="https://x.com/D00dleApes" className="z-50" target="_blank">
 
           <svg
             width="31"

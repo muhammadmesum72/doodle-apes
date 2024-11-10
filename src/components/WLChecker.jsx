@@ -1,11 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import GradientHeading from "./GradientHeading";
-
-const whitelistedAddresses = [
-  "0x8c462b0fb450b64603Fc6BFDe6455D4f8e258c3A",
-  "0x1403d12088eD9e504590fa8B813B01CB735b3b84",
-];
+import { whitelistedAddresses } from "../data";
 
 function MessageModal({ message, onClose }) {
   const isEligible = message.includes("Congratulations");
@@ -54,9 +50,17 @@ function MessageModal({ message, onClose }) {
               >
                 {message}
               </p>
-              <div className="mt-5 w-fit mx-auto cursor-pointer bg-gradient-to-tr from-[#1E58FC] via-[#D914E4] to-[#F10419] min-w-[200px] rounded-[50px] min-h-[40px] text-[16px] font-bold text-white flex items-center justify-center">
-                {isEligible ? "Mint Now" : "Contact Us"}
-              </div>
+              {isEligible ? (
+                <div className="mt-5 w-fit mx-auto cursor-pointer bg-gradient-to-tr from-[#1E58FC] via-[#D914E4] to-[#F10419] min-w-[200px] rounded-[50px] min-h-[40px] text-[16px] font-bold text-white flex items-center justify-center">
+                  Mint Now
+                </div>
+              ) : (
+                <a target="_blank" href="https://x.com/D00leApes">
+                  <div className="mt-5 w-fit mx-auto cursor-pointer bg-gradient-to-tr from-[#1E58FC] via-[#D914E4] to-[#F10419] min-w-[200px] rounded-[50px] min-h-[40px] text-[16px] font-bold text-white flex items-center justify-center">
+                    Contact Us
+                  </div>
+                </a>
+              )}
             </div>
           </motion.div>
         </motion.div>
@@ -98,7 +102,7 @@ export default function WLChecker() {
   return (
     <div className="min-h-screen z-20 flex flex-col items-center justify-center w-full p-6 text-white">
       <div className="mb-5">
-      <GradientHeading>Whitelist Checker</GradientHeading>
+        <GradientHeading>Whitelist Checker</GradientHeading>
       </div>
       <input
         value={wallet}
