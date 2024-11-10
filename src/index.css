@@ -8,3 +8,14 @@ html{
     scroll-behavior: smooth;
     font-family: "Fredoka";
 }
+
+.heading-border {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .btn-gradient-1 {
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #1E58FC, #D914E4, #F10419) 1;
+    border-radius: 20px;
+  }

@@ -1,9 +1,15 @@
+import GradientHeading from "./GradientHeading";
+
 export default function SectionAbout() {
   return (
-    <section className="  text-white flex flex-col lg:flex-row gap-8 items-center min-h-screen">
-      <div className="lg:w-1/2 space-y-6">
-        <h2 className="text-7xl font-bold">About Us</h2>
-        <p className="text-2xl">
+    <section
+      id="aboutus"
+      className="text-white flex flex-col-reverse lg:flex-row gap-12 items-center py-16 px-6 lg:px-16 xl:px-32 min-h-screen"
+    >
+      {/* Text Section */}
+      <div className="lg:w-1/2">
+        <GradientHeading>About Us</GradientHeading>
+        <p className="text-base sm:text-lg lg:text-xl leading-relaxed sm:leading-8 lg:leading-9 mt-4">
           Welcome to D00dle Apes – the first-ever doodle-style NFT on the Ape
           Chain! We’re breaking new ground with this unique collection, merging
           vibrant colors, distinct expressions, and unmatched creativity to
@@ -14,13 +20,16 @@ export default function SectionAbout() {
           piece of history.
         </p>
       </div>
-      <div className="lg:w-1/2 grid grid-cols-3 gap-4 mt-8 lg:mt-0">
-        {/* Replace 'nft1.png' to 'nft6.png' with actual NFT images */}
-        {[...Array(6)].map((_, index) => (
-          <div key={index}>
-            <img src={`/images/${index + 1}.jpg`} width={150} height={150} alt="NFT" className="rounded w-full" />
-          </div>
-        ))}
+
+      {/* Image Section */}
+      <div className="lg:w-1/2 flex justify-center">
+        <div className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] mx-auto">
+          <img
+            src={`/images/heroImg.png`}
+            alt="NFT"
+            className="rounded-lg  w-full object-cover"
+          />
+        </div>
       </div>
     </section>
   );
