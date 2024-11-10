@@ -51,9 +51,11 @@ function MessageModal({ message, onClose }) {
                 {message}
               </p>
               {isEligible ? (
-                <div className="mt-5 w-fit mx-auto cursor-pointer bg-gradient-to-tr from-[#1E58FC] via-[#D914E4] to-[#F10419] min-w-[200px] rounded-[50px] min-h-[40px] text-[16px] font-bold text-white flex items-center justify-center">
-                  Mint Now
-                </div>
+                <a href="https://magiceden.io/" target="_blank">
+                  <div className="mt-5 w-fit mx-auto cursor-pointer bg-gradient-to-tr from-[#1E58FC] via-[#D914E4] to-[#F10419] min-w-[200px] rounded-[50px] min-h-[40px] text-[16px] font-bold text-white flex items-center justify-center">
+                    Mint Now
+                  </div>
+                </a>
               ) : (
                 <a target="_blank" href="https://x.com/D00leApes">
                   <div className="mt-5 w-fit mx-auto cursor-pointer bg-gradient-to-tr from-[#1E58FC] via-[#D914E4] to-[#F10419] min-w-[200px] rounded-[50px] min-h-[40px] text-[16px] font-bold text-white flex items-center justify-center">

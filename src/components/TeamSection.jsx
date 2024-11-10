@@ -3,10 +3,10 @@
 import GradientHeading from "./GradientHeading";
 
 const team = [
-  { role: "Founder", name: "Miles", image: "/images/1.jpg" },
-  { role: "Dev", name: "Meguel", image: "/images/2.jpg" },
-  { role: "Marketing", name: "Frank", image: "/images/3.jpg" },
-  { role: "Developer", name: "Carter", image: "/images/4.jpg" },
+  { role: "Founder", name: "Miles", image: "/images/Founder.jpg" },
+  { role: "Developer", name: "Meguel", image: "/images/Developer.jpg" },
+  { role: "Marketing", name: "Frank", image: "/images/Marketing.jpg" },
+  { role: "Artist", name: "Carter", image: "/images/Artist.jpg" },
 ];
 
 export default function SectionTeam() {

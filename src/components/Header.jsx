@@ -69,7 +69,7 @@ export default function Header() {
           About Us
         </button>
         <button onClick={() => handleScrollToSection("team")}>Team</button>
-        <button onClick={() => handleScrollToSection("faq")}>Faqs</button>
+        <button onClick={() => handleScrollToSection("faq")}>F.A.Q</button>
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -77,7 +77,13 @@ export default function Header() {
         >
           Contact Us
         </a>
-        <div className="opacity-50 inline-block">Mint</div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://magiceden.io/"
+        >
+          Mint
+        </a>
       </div>
 
       <div className="hidden md:flex">
@@ -109,7 +115,7 @@ export default function Header() {
             About Us
           </button>
           <button onClick={() => handleScrollToSection("team")}>Team</button>
-          <button onClick={() => handleScrollToSection("faq")}>Faqs</button>
+          <button onClick={() => handleScrollToSection("faq")}>F.A.Q</button>
           <a
             onClick={toggleMenu}
             target="_blank"
@@ -118,10 +124,16 @@ export default function Header() {
           >
             Contact Us
           </a>
-          <div className="opacity-50 inline-block">Mint</div>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://magiceden.io/"
+          >
+            Mint
+          </a>
           <Link onClick={toggleMenu} to="/wl-checker">
             <div className="bg-gradient-to-tr from-[#1E58FC] via-[#D914E4] to-[#F10419] min-w-[200px] rounded-[50px] min-h-[50px] text-[18px] font-bold text-white flex items-center justify-center">
-              Check WishList Please
+              WhiteList Checker
             </div>
           </Link>
         </motion.div>
